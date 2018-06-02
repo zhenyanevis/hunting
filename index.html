@@ -5,6 +5,8 @@
 	<meta name="keywords" content="разные, ключевые, слова">
 	<meta name="description" content="краткое описание">
 	<title>Сочная охота в Беларуси</title>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
@@ -26,7 +28,7 @@
 		<div class="header-title">
 			<h1>Сочная<br>охота<br>в Беларуси</h1>
 			<p>Найди трофей по вкусу</p>
-			<a href="#" class="btn">Трофеи</a>
+			<a href="#galleri" class="btn">Трофеи</a>
 			<a href="javascript:PopUpShowF()" class="btn btn-white">Сделать заказ</a>
 		</div>
 	</div>
@@ -73,7 +75,18 @@
 					<a href="javascript:PopUpShowF()" class="btn btn-black">Сделать заказ</a>
 				</div>
 			</div>
-			<div class="slider"></div>
+			<div class="slider">
+				<!-- slider -->
+				<div class="directions">
+					<div class="direction-blocks">
+						<div class="directions-block"><img src="img/Трофей.jpg" alt=""></div>
+						<div class="directions-block"><img src="img/Трофей.jpg" alt=""></div>
+						<div class="directions-block"><img src="img/Трофей.jpg" alt=""></div>
+						<div class="directions-block"><img src="img/Трофей.jpg" alt=""></div>
+						<div class="directions-block"><img src="img/Трофей.jpg" alt=""></div>
+					</div>
+				</div>
+			</div>
 			<p onclick="PopUpShowG();"><img src="img/next.svg" alt="" width="25px" height="25px" class="arrow">Посмотреть больше</p>
 		</div>
 	</div>
@@ -247,7 +260,7 @@
 </div>
 
 <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-<script src="js/carousel.js"></script>
+<script type="text/javascript" src="slick/slick.js"></script>
 <script>
 	$(document).ready(function(){
         //Скрыть PopUp при загрузке страницы    
@@ -273,6 +286,12 @@
     function PopUpHideG(){
     	$(".galleri-popup").hide();
     }
+</script>
+<script>
+	$('.direction-blocks').slick({
+		arrows: false,	
+		dots: true
+	});
 </script>
 </body>
 </html>
