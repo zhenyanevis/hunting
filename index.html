@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="разные, ключевые, слова">
+	<meta name="description" content="краткое описание">
+	<title>Сочная охота в Беларуси</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+
+	<div class="header" id="main">
+		<div class="header-menu">	
+			<img src="img/АнФрид.svg" alt="АнФрид" width="100px" height="100px">
+			<div class="main-nav">
+				<ul>
+					<li><a href="#main" class="btn-text">Главная</a></li>
+					<li><a href="#about" class="btn-text">О нас</a></li>
+					<li><a href="#features" class="btn-text">Преимущества</a></li>
+					<li><a href="#galleri" class="btn-text">Трофеи</a></li>
+					<li><a href="javascript:PopUpShow()" class="btn">Сделать заказ</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header-title">
+			<h1>Сочная<br>охота<br>в Беларуси</h1>
+			<p>Найди трофей по вкусу</p>
+			<a href="#" class="btn">Трофеи</a>
+			<a href="javascript:PopUpShow()" class="btn btn-white">Сделать заказ</a>
+		</div>
+	</div>
+	<div class="about" id="about">
+		<div class="container">
+			<div class="about-text">
+				<h2>О нас</h2>
+				<p>Мы молодая, но амбициозная фирма занимающиеся организацией комфортабельной охоты и туризма в Беларуси. Тем не менее, на рынке мы более 10 лет и за это время уже успели сформировать репутацию качественного и стабильного поставщика услуг по самой интересной и захватывающей охоте на просторах нашей страны. Наши услуги осуществляются на базе самых лучших хозяйств, а комфорт охоты обеспечивается самыми опытными лесниками.</p>
+				<p>Не знаете чем занять себя на выходных или давно мечтали хорошо отдохнуть и провести время – самое время выйти из будний суеты и очутиться наедине с природой! </p>
+			</div>
+		</div>
+	</div>
+
+	<div class="features" id="features">
+		<div class="container">
+			<h2>Наши преимущества</h2>
+			<div class="features-items">
+				<div class="feature-item">
+					<img src="img/Олень.svg" alt="Олень" class="svg-icon-1">
+					<h3>Лучшие трофеи</h3>
+					<p>Нашим клиентам предоставляется возможность взять самый лучший трофей!</p>
+				</div>
+				<div class="feature-item">
+					<img src="img/Дом.svg" alt="Дом" class="svg-icon-2">
+					<h3>Отличный сервис</h3>
+					<p>Во время охоты нашим клиентам обеспечиваются комфортабельные условия проживания и оличный сервис!</p>
+				</div>
+				<div class="feature-item">
+					<img src="img/Охотник.svg" alt="Охотник" class="svg-icon-3">
+					<h3>Полное сопровождение</h3>
+					<p>С нашим клиентам работают лучшие егери, которые гарантируют получение трофея!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="galleri" id="galleri">
+		<div class="container">
+			<div class="galleri-head">
+				<div>
+					<h2>Трофеи</h2>
+				</div>
+				<div>
+					<a href="javascript:PopUpShow()" class="btn btn-black">Сделать заказ</a>
+				</div>
+			</div>
+			<div class="slider"></div>
+			<p><img src="img/next.svg" alt="" width="25px" height="25px" class="arrow"> Посмотреть больше</p>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="footer-items">
+				<div class="logo">
+					<img src="img/АнФрид - белая.svg" alt="" width="100px" height="100px">
+				</div>
+				<div class="footer-container">
+					<div class="footer-item contacts">
+						<h3>Наши контакты</h3>
+						<ul>
+							<li>
+								<p>belohota@mail.ru</p>
+							</li>
+							<li>
+								<p>+375 29 129 78 77</p>
+							</li>
+							<li>
+								<p>+375 29 872 21 50</p>
+							</li>
+							<li>
+								<p>+375 29 753 85 14</p>
+							</li>
+							<li>
+								<p>г. Жодино, ул. Брестская, д. 29, оф. 12</p>
+							</li>
+						</ul>
+					</div>	
+					<div class="footer-item">
+
+						<div class="order">
+							<a href="javascript:PopUpShow()" class="btn" id="btn-order">Сделать заказ</a>
+							<p>Оставьте свои<br>контактные данные<br>и мы с вами свяжемся!</p>
+						</div>
+						<div class="copyright">
+							<p><a href="#">Политика конфиденциальности</a></p>
+							<p>2018 © Частное предприятие «АнФрид»</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="feedback">
+		<div class="feedback-block">
+			<div class="feedback-block-item">
+				<h3>Оставить заявку</h3>
+				<img src="img/cancel.svg" alt="X" onclick="PopUpHide();">
+				<form class="feedback-form" action="" method="post">
+					<div class="feedback-form-group">
+						<input type="text" name="name" placeholder="Имя" required>
+					</div>
+					<div class="feedback-form-group">
+						<input type="text" name="soname" placeholder="Фамилия" required>
+					</div>
+					<div class="feedback-form-group">
+						<input type="text" name="email" placeholder="Email" required>
+					</div>
+					<div class="feedback-form-group">
+						<input type="text" name="phone" placeholder="Телефон" required>
+					</div>
+					<div class="feedback-form-group">
+						<textarea name="message" placeholder="Комментарий"></textarea>
+					</div>
+					<p class="politics">Нажимая на кнопку "Отправить заявку", вы даете согласие на обработку персональных данных</p>
+					<input type="submit" value="Отправить заявку" class="btn-form-order">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script src="js/carousel.js"></script>
+<script>
+	$(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+    	$(".feedback").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+    	$(".feedback").hide();
+    }
+</script>
+</body>
+</html>

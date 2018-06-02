@@ -1,0 +1,380 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto Slab', serif;
+	font-size: 24px;
+	color: #181818;
+	line-height: 36px;
+	font-weight: 400;
+}
+a{
+	text-decoration: none;
+}
+h2{
+	font-size: 48px;
+	font-weight: 700;
+}
+.header{
+	height: 900px;
+	width: 100%;
+	background: #181818 url("../img/Охотник.jpg") 50% 50% no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+}
+.header-menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 130px;
+	padding: 0;
+	background-color: rgba(0,0,0, 0.1);	
+}
+.header-menu img{	
+	margin-right: 100px;
+	margin-left: -190px;
+}
+.main-nav{
+	width: 960px;
+	margin: 0;
+	padding: 0;
+	height: 130px;
+}
+.main-nav ul{
+	padding-top: 25px;
+	padding-left: 0;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+.main-nav ul .btn{
+	margin-left: 150px;
+}
+.main-nav a{
+	color: #fff;
+	font-weight: 700;
+}
+.btn-text{
+	position: relative;
+}
+.btn-text:after{
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 0%;
+	top: 110%;
+	left: 0%;
+	background-color: #d4af7e;
+	transition: 0.2s all;
+}
+.btn-text:hover:after{
+	width: 100%;
+}
+.btn-text:hover{
+	color: #d4af7e;
+}
+
+.btn-text:active{
+	color: rgba(255,255,255, 0.8);
+}
+.btn:hover{
+	color: #fff;
+	background-color: #c19d6e;
+}
+.btn:active{
+	color: rgba(255,255,255, 0.8);
+}
+.btn{
+	cursor: pointer;
+	padding: 10px 25px;
+	background-color: #d4af7e;
+	border-radius: 45px;
+}
+.header-title{
+	width: 960px;
+	height: 100%;
+	margin: auto;
+}
+.header-title h1{
+	margin-top: 30px;
+	margin-bottom: 40px;
+	font-size: 140px;
+	font-weight: 700;
+	line-height: 130px;
+}
+.header-title p{
+	margin: 0;
+	margin-bottom: 100px;
+	font-size: 48px;
+	font-weight: 400;
+}
+.header-title a{
+	color: #fff;
+	font-weight: 700;
+	margin-right: 30px;
+}
+.btn-white{
+	background-color: rgba(0,0,0,0.2);
+	border: 3px solid white;
+}
+.btn-white:hover{
+	background-color: rgba(0,0,0,0.3);
+}
+.about{
+	height: 960px;
+	background: #fff url("../img/Карта.png") 100% 50% no-repeat;
+	background-size: 80%;
+}
+.container{
+	width: 960px;
+	margin: auto;
+}
+.about-text{
+	padding-top: 80px;
+	width: 600px;	
+}
+.features{
+	height: 960px;
+}
+.features-items{
+	margin-top: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.feature-item img{
+	height: 200px;
+	padding: 30px;
+}
+
+.feature-item{
+	width: 280px;
+	height: 450px;
+}
+
+.galleri{
+	height: 960px;
+}
+.galleri-head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.galleri a{
+	color: #181818;
+	font-weight: 700;
+}
+.arrow{
+	transform: rotate(90deg);
+	margin-right: 10px;
+}
+.btn-black{
+	background-color: transparent;
+	border: 3px solid #181818;
+}
+.btn-black:hover{
+	color: #fff;
+	background-color: #d4af7e;
+	border-color: transparent;
+}
+.slider{
+	margin-top: 30px;
+	margin-bottom: 30px;	
+	background-color: #181818;
+	width: 960px;
+	height: 635px;
+}
+.footer{
+	height: 250px;
+	background-color: #181818;
+	font-size: 15px;
+	color: #d4af7e;
+}
+.footer-container{
+	display: flex;
+	justify-content: center;
+	width: 880px;
+	margin-left: 20px;
+}
+.footer-items{
+	display: flex;
+}
+.footer-item{
+	width: 350px;
+	height: 250px;
+	margin-left: 20px;
+}
+.footer-item h3{
+	font-size: 24px;
+	margin-bottom: 0;
+	margin-top: 40px;
+}
+.footer-item p{
+	color: white;
+}
+.logo{
+	position: relative;
+	width: 70px;
+	margin-top: -40px;
+	height: 250px;
+	background-color: #d4af7e;
+}
+.logo img{
+	position: absolute;
+	top: 40px;
+	left: 19px;
+}
+.contacts ul{
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	line-height: 30px;
+}
+.contacts li p{
+	margin: 0;
+}
+.order{
+	position: relative;
+	padding-top: 30px;
+	height: 130px;
+	line-height: 24px;
+}
+.order a{
+	position: absolute;
+	border: 3px solid #d4af7e;
+	background-color: transparent;
+	font-size: 24px;
+	color: #d4af7e;
+	font-weight: bold;
+	left: -30px;
+}
+.order p{
+	margin-top: 60px;
+}
+.copyright{
+	line-height: 25px;
+	margin-top: 15px;
+	position: relative;
+}
+.copyright p a{
+	color: #757575;
+}
+.copyright p a:hover{
+	color: rgba(150,150,150,1);
+}
+.copyright p a:active{
+	color: rgba(117,117,117,0.8);
+}
+.copyright p:first-child::after{
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 250px;
+	top: 22px;
+	left: 0%;
+	background-color: #4d4d4d;
+}
+.copyright p{
+	margin: 0;
+	color: #757575;
+}
+.feedback{
+	display: flex;
+	position: fixed;
+	margin: 0;
+	background-color: rgba(0,0,0,0.3);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.feedback-block{
+	justify-content: center;
+	margin: auto;
+	width: 500px;
+	border-radius: 25px;
+	background-color: #fff;
+	-webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+.feedback-block-item{
+	position: relative;
+	padding: 50px;	
+}
+.feedback-block-item img{
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 20px;
+	right: 20px;
+	opacity: 0.5;
+}
+.feedback-block-item img:hover{
+	opacity: 1;
+}
+.feedback-block-item img:active{
+	opacity:0.3;
+}
+.feedback-block-item p{
+	margin: 0;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	font-size: 15px;
+	color: #8d8d8d;
+	line-height: 24px;
+}
+.feedback-block-item h3{
+	margin: 0;
+	text-align: center;
+}
+.feedback-form-group{
+	margin-top: 20px;
+}
+
+.feedback-form-group input,
+.feedback-form-group textarea {
+	font: inherit;
+	font-size: 15px;
+	border: 1px solid rgba(0,0,0,0.5);
+	border-radius: 5px;
+	padding: 10px 15px;
+	width: 368px;
+	height: 30px;
+}
+.feedback-form-group textarea{
+	height: 90px;
+}
+
+.btn-form-order{
+	cursor: pointer;
+	background-color: #181818;
+	color: #fff;
+	font: inherit;
+	font-size: 15px;
+	border-radius: 5px;
+	padding: 10px 15px;
+	width: 100%;
+	border: none;
+}
+.btn-form-order:hover{
+	background-color: #d4af7e;
+	transition: 0.3s;
+}
+.btn-form-order:active{
+	background-color: #d4af7e;
+	opacity: 0.7;
+}
