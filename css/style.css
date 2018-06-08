@@ -31,15 +31,17 @@ h2{
 	padding: 0;
 	background-color: rgba(0,0,0, 0.1);	
 }
-.header-menu img{	
-	margin-right: 100px;
-	margin-left: -190px;
-}
 .main-nav{
+	position: relative;
 	width: 960px;
 	margin: 0;
 	padding: 0;
 	height: 130px;
+}
+.main-nav img{	
+	position: absolute;
+	top: 15px;
+	left: -190px;
 }
 .main-nav ul{
 	padding-top: 25px;
@@ -81,6 +83,7 @@ h2{
 .btn:hover{
 	color: #fff;
 	background-color: #c19d6e;
+	transition: 0.3s;
 }
 .btn:active{
 	color: rgba(255,255,255, 0.8);
@@ -117,6 +120,7 @@ h2{
 .btn-white{
 	background-color: rgba(0,0,0,0.2);
 	border: 3px solid white;
+	transition: 0.3s;
 }
 .btn-white:hover{
 	background-color: rgba(0,0,0,0.3);
@@ -212,6 +216,7 @@ h2{
 	left: 4px;
 	opacity: 0.4;
 }
+
 .footer{
 	height: 250px;
 	background-color: #181818;
@@ -286,6 +291,7 @@ h2{
 }
 .copyright p a{
 	color: #757575;
+	transition: 0.3s;
 }
 .copyright p a:hover{
 	color: rgba(150,150,150,1);
@@ -399,7 +405,6 @@ h2{
 }
 .btn-form-order:hover{
 	background-color: #d4af7e;
-	transition: 0.3s;
 }
 .btn-form-order:active{
 	background-color: #d4af7e;
@@ -467,7 +472,7 @@ h2{
 	padding: 40px;
 	padding-top: 0;
 	width: 100%;
-	max-width: 880px;
+	max-width: 91.66666%;
 }
 .galleri-item{
 	cursor: pointer;
@@ -496,4 +501,25 @@ h2{
 }
 .galleri-item .border:active{
 	background-color: rgba(0,0,0,0.3);
+}
+.galleri-img{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(0,0,0,0.5);
+	display:grid;
+	grid-auto-flow:column;
+	align-content: center;
+	
+
+}
+@media screen and (max-device-width: 1200px){
+	.main-nav img{
+		position: static;
+	}
+	.main-nav li:first-child{
+		margin-right: 5px;
+	}
 }

@@ -14,9 +14,9 @@
 
 	<div class="header" id="main">
 		<div class="header-menu">	
-			<img src="img/АнФрид.svg" alt="АнФрид" width="100px" height="100px">
 			<div class="main-nav">
 				<ul>
+					<li><img src="img/АнФрид.svg" alt="АнФрид" width="100px" height="100px"></li>
 					<li><a href="#main" class="btn-text">Главная</a></li>
 					<li><a href="#about" class="btn-text">О нас</a></li>
 					<li><a href="#features" class="btn-text">Преимущества</a></li>
@@ -138,7 +138,7 @@
 		<div class="feedback-block">
 			<div class="feedback-block-item">
 				<h3>Оставить заявку</h3>
-				<img src="img/cancel.svg" alt="X" onclick="PopUpHideF();">
+				<img src="img/cancel.svg" alt="X" onclick="PopUpHideF();" class="close_btn">
 				<form class="feedback-form" action="" method="post">
 					<div class="feedback-form-group">
 						<input type="text" name="name" placeholder="Имя" required>
@@ -147,10 +147,10 @@
 						<input type="text" name="soname" placeholder="Фамилия" required>
 					</div>
 					<div class="feedback-form-group">
-						<input type="text" name="email" placeholder="Email" required>
+						<input type="email" name="email" placeholder="Email" required>
 					</div>
 					<div class="feedback-form-group">
-						<input type="text" name="phone" placeholder="Телефон" required>
+						<input type="tel" name="tel" placeholder="Телефон" required>
 					</div>
 					<div class="feedback-form-group">
 						<textarea name="message" placeholder="Комментарий"></textarea>
@@ -163,95 +163,94 @@
 	</div>
 </div>
 
-<div class="galleri-popup">
+<div class="galleri-popup" id="galleri-popup">
 	<div class="container">
 		<div class="galleri-window">
 			<p onclick="PopUpHideG();"><img src="img/next.svg" alt="" width="25px" height="25px" class="arrow">Посмотреть больше</p>
 			<img src="img/cancel.svg" alt="X" onclick="PopUpHideG();" class="close-btn">
-			<div class="galleri-slider"></div>
 			<div class="galleri-items">
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/1.jpg" alt="1">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/2.jpg" alt="2">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/3.jpg" alt="3">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/4.jpg" alt="4">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/5.jpg" alt="5">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/6.jpg" alt="6">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/7.jpg" alt="7">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/8.jpg" alt="8">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/9.jpg" alt="9">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/10.jpg" alt="10">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/11.jpg" alt="11">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/12.jpg" alt="12">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/13.jpg" alt="13">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/14.jpg" alt="14">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/15.jpg" alt="15">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/16.jpg" alt="16">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/17.jpg" alt="17">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/18.jpg" alt="18">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/19.jpg" alt="19">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/20.jpg" alt="20">
 				</div>
 				<div class="galleri-item">
-					<div class="border"></div>
+					<div class="border" id="border"></div>
 					<img src="img/galleri/21.jpg" alt="21">
 				</div>
 			</div>
@@ -261,11 +260,10 @@
 
 <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
 <script type="text/javascript" src="slick/slick.js"></script>
-<script>
-	$(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы    
-        PopUpHideF();
-    });
+<script> 
+
+	PopUpHideF();
+	PopUpHideG();
     //Функция отображения PopUp
     function PopUpShowF(){
     	$(".feedback").show();
@@ -274,10 +272,6 @@
     function PopUpHideF(){
     	$(".feedback").hide();
     }
-    $(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы    
-        PopUpHideG();
-    });
     //Функция отображения PopUp
     function PopUpShowG(){
     	$(".galleri-popup").show();
@@ -286,10 +280,32 @@
     function PopUpHideG(){
     	$(".galleri-popup").hide();
     }
+    
+
+    document.addEventListener('click', e=>{
+    	if(e.target.id=='border'){
+    		console.log(e.target.parentElement.children[1].src)
+    		let img = document.createElement('div');
+    		img.className = "galleri-img";
+    		img.style.backgroundImage ="url('"+ e.target.parentElement.children[1].src+"')";
+    		img.onclick = function(){
+    			img.remove();
+    		}
+    		
+
+    		document.getElementById('galleri-popup').appendChild(img)
+    	}
+    	if(e.target.id=='galleri-popup'){
+    		$(".galleri-popup").hide();
+    	}
+    })
+    $('<div class=""></div>galleri-popup container').on('click',function(){
+    	$(".galleri-popup").hide();	
+    })
 </script>
 <script>
 	$('.direction-blocks').slick({
-		arrows: false,	
+		arrows: true,	
 		dots: true
 	});
 </script>
