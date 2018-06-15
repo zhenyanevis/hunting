@@ -175,17 +175,24 @@ h2{
 	color: #181818;
 	font-weight: 700;
 }
+.galleri p{
+	padding: 10px 0;
+	margin: 0;
+}
 .galleri p:hover{
 	cursor: pointer;
-	opacity: 0.7;
+	/*opacity: 0.9;*/
+	box-shadow: 0 0 25px rgba(0,0,0,0.25);
 }
 .arrow{
 	transform: rotate(90deg);
 	margin-right: 15px;
+	margin-left: 15px;
 }
 .btn-black{
 	background-color: transparent;
 	border: 3px solid #181818;
+	transition: 0.3s;
 }
 .btn-black:hover{
 	color: #fff;
@@ -193,8 +200,9 @@ h2{
 	border-color: transparent;
 }
 .slider{
+	cursor: -webkit-grab;
 	margin-top: 30px;
-	margin-bottom: 30px;	
+	margin-bottom: 15px;	
 	background-color: #181818;
 	width: 960px;
 	height: 635px;
@@ -434,7 +442,7 @@ h2{
 	-webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
 }
 .galleri-window p{
 	cursor: pointer;
@@ -481,6 +489,7 @@ h2{
 	max-width: 280px;
 	height: 169px;
 	margin-top: 35px;
+
 }
 .galleri-item img{
 	max-width: 100%;
@@ -512,9 +521,9 @@ h2{
 	display:grid;
 	grid-auto-flow:column;
 	align-content: center;
-	
-
 }
+
+
 @media screen and (max-device-width: 1200px){
 	.main-nav img{
 		position: static;

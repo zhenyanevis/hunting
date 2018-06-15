@@ -21,7 +21,7 @@
 					<li><a href="#about" class="btn-text">О нас</a></li>
 					<li><a href="#features" class="btn-text">Преимущества</a></li>
 					<li><a href="#galleri" class="btn-text">Трофеи</a></li>
-					<li><a href="javascript:PopUpShowF()" class="btn">Сделать заказ</a></li>
+					<li><a href="javascript:windowOpener('feedback')" class="btn">Сделать заказ</a></li>
 				</ul>
 			</div>
 		</div>
@@ -29,7 +29,7 @@
 			<h1>Сочная<br>охота<br>в Беларуси</h1>
 			<p>Найди трофей по вкусу</p>
 			<a href="#galleri" class="btn">Трофеи</a>
-			<a href="javascript:PopUpShowF()" class="btn btn-white">Сделать заказ</a>
+			<a href="javascript:windowOpener('feedback')" class="btn btn-white">Сделать заказ</a>
 		</div>
 	</div>
 	<div class="about" id="about">
@@ -72,7 +72,7 @@
 					<h2>Трофеи</h2>
 				</div>
 				<div>
-					<a href="javascript:PopUpShowF()" class="btn btn-black">Сделать заказ</a>
+					<a href="javascript:windowOpener('feedback')" class="btn btn-black">Сделать заказ</a>
 				</div>
 			</div>
 			<div class="slider">
@@ -87,7 +87,7 @@
 					</div>
 				</div>
 			</div>
-			<p onclick="PopUpShowG();"><img src="img/next.svg" alt="" width="25px" height="25px" class="arrow">Посмотреть больше</p>
+			<p onclick="windowOpener('galleri-popup');"><img src="img/next.svg" alt="" width="25px" height="25px" class="arrow">Посмотреть больше</p>
 		</div>
 	</div>
 
@@ -121,7 +121,7 @@
 					<div class="footer-item">
 
 						<div class="order">
-							<a href="javascript:PopUpShowF()" class="btn" id="btn-order">Сделать заказ</a>
+							<a href="javascript:windowOpener('feedback')" class="btn" id="btn-order">Сделать заказ</a>
 							<p>Оставьте свои<br>контактные данные<br>и мы с вами свяжемся!</p>
 						</div>
 						<div class="copyright">
@@ -134,11 +134,11 @@
 		</div>
 	</div>
 
-	<div class="feedback">
+	<div class="feedback" id="feedback">
 		<div class="feedback-block">
 			<div class="feedback-block-item">
 				<h3>Оставить заявку</h3>
-				<img src="img/cancel.svg" alt="X" onclick="PopUpHideF();" class="close_btn">
+				<img src="img/cancel.svg" alt="X" onclick="windowCloser('feedback');" class="close_btn">
 				<form class="feedback-form" action="" method="post">
 					<div class="feedback-form-group">
 						<input type="text" name="name" placeholder="Имя" required>
@@ -166,137 +166,103 @@
 <div class="galleri-popup" id="galleri-popup">
 	<div class="container">
 		<div class="galleri-window">
-			<p onclick="PopUpHideG();"><img src="img/next.svg" alt="" width="25px" height="25px" class="arrow">Посмотреть больше</p>
-			<img src="img/cancel.svg" alt="X" onclick="PopUpHideG();" class="close-btn">
+			<p onclick="windowCloser('galleri-popup');"><img src="img/next.svg" alt="" width="25px" height="25px" class="arrow">Посмотреть больше</p>
+			<img src="img/cancel.svg" alt="X" onclick="windowCloser('galleri-popup');" class="close-btn">
 			<div class="galleri-items">
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/1.jpg" alt="1">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/2.jpg" alt="2">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/3.jpg" alt="3">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/4.jpg" alt="4">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/5.jpg" alt="5">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/6.jpg" alt="6">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/7.jpg" alt="7">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/8.jpg" alt="8">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/9.jpg" alt="9">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/10.jpg" alt="10">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/11.jpg" alt="11">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/12.jpg" alt="12">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/13.jpg" alt="13">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/14.jpg" alt="14">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/15.jpg" alt="15">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/16.jpg" alt="16">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/17.jpg" alt="17">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/18.jpg" alt="18">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/19.jpg" alt="19">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/20.jpg" alt="20">
-				</div>
-				<div class="galleri-item">
-					<div class="border" id="border"></div>
-					<img src="img/galleri/21.jpg" alt="21">
-				</div>
+				<!-- items -->
 			</div>
 		</div>
 	</div>
 </div>
 
-<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.js"></script>
 <script> 
 
-	PopUpHideF();
-	PopUpHideG();
-    //Функция отображения PopUp
-    function PopUpShowF(){
-    	$(".feedback").show();
-    }
-    //Функция скрытия PopUp
-    function PopUpHideF(){
-    	$(".feedback").hide();
-    }
-    //Функция отображения PopUp
-    function PopUpShowG(){
-    	$(".galleri-popup").show();
-    }
-    //Функция скрытия PopUp
-    function PopUpHideG(){
-    	$(".galleri-popup").hide();
-    }
+ 	var windowCloser = function(className){
+ 		var controller = document.getElementsByClassName(className);
+    	controller[0].style.display = "none";
+ 	}
     
+    windowCloser('feedback');
+    windowCloser('galleri-popup');
+
+    var windowOpener = function(className){
+    	var controller = document.getElementsByClassName(className);
+    	controller[0].style.display = "flex";
+    }
+
+    var pictureUrls = [];
+    for(var i = 0; i < 21; i++){
+    	pictureUrls[i] = 'img/galleri/' + (i+1) + '.jpg';
+    }
+
+    var makeElement = function (tagName, className) {
+    	var element = document.createElement(tagName);
+    	element.classList.add(className);
+
+    	return element;
+    };
+
+    var createImgBlock = function(imgUrl){
+    	var galleriItem = makeElement('div', 'galleri-item');
+
+    	var border = makeElement('div', 'border');
+    	border.id = 'border';
+    	galleriItem.appendChild(border);
+
+    	var picture = makeElement('img', 'galleri--img');
+    	picture.src = imgUrl;
+    	picture.alt = 'Охота в Беларуси';
+    	galleriItem.appendChild(picture);
+
+    	return galleriItem;
+    }
+
+    var galleriList = document.querySelector('.galleri-items');
+
+    for (var i = 0; i < pictureUrls.length; i++) {
+    	var galleriItem = createImgBlock(pictureUrls[i]);
+    	galleriList.appendChild(galleriItem);  
+    }
+
+    createImgBlock(pictureUrls);
+
+
+    
+    $(document).ready(function(){
+    	$('.header').on("click","a", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+		top = $(id).offset().top;
+		var timeScroll = 1500;
+		if(top < 1500){
+			timeScroll = 1000;
+		}
+		$('body,html').animate({scrollTop: top}, timeScroll);
+	});
+    });
+
+
 
     document.addEventListener('click', e=>{
     	if(e.target.id=='border'){
-    		console.log(e.target.parentElement.children[1].src)
+    		console.log(e.target.parentElement.children[1].src);
     		let img = document.createElement('div');
     		img.className = "galleri-img";
     		img.style.backgroundImage ="url('"+ e.target.parentElement.children[1].src+"')";
+
     		img.onclick = function(){
     			img.remove();
     		}
-    		
 
-    		document.getElementById('galleri-popup').appendChild(img)
+    		document.getElementById('galleri-popup').appendChild(img);
     	}
     	if(e.target.id=='galleri-popup'){
     		$(".galleri-popup").hide();
+    	}
+    	if(e.target.id=='feedback'){
+    		$(".feedback").hide();
     	}
     })
     $('<div class=""></div>galleri-popup container').on('click',function(){
@@ -305,7 +271,11 @@
 </script>
 <script>
 	$('.direction-blocks').slick({
-		arrows: true,	
+		arrows: false,	
+		dots: true
+	});
+	$('.slider-blocks').slick({
+		arrows: false,	
 		dots: true
 	});
 </script>
