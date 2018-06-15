@@ -179,6 +179,19 @@
 <script type="text/javascript" src="slick/slick.js"></script>
 <script> 
 
+	 $(document).ready(function(){
+    	$('.header').on("click","a", function (event) {
+		var id  = $(this).attr('href'),
+		top = $(id).offset().top;
+		var timeScroll = 1500;
+		if(top < 1500){
+			timeScroll = 1000;
+		}
+		$('body,html').animate({scrollTop: top}, timeScroll);
+	});
+    });
+
+
  	var windowCloser = function(className){
  		var controller = document.getElementsByClassName(className);
     	controller[0].style.display = "none";
@@ -227,23 +240,6 @@
     }
 
     createImgBlock(pictureUrls);
-
-
-    
-    $(document).ready(function(){
-    	$('.header').on("click","a", function (event) {
-		event.preventDefault();
-		var id  = $(this).attr('href'),
-		top = $(id).offset().top;
-		var timeScroll = 1500;
-		if(top < 1500){
-			timeScroll = 1000;
-		}
-		$('body,html').animate({scrollTop: top}, timeScroll);
-	});
-    });
-
-
 
     document.addEventListener('click', e=>{
     	if(e.target.id=='border'){
