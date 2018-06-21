@@ -54,7 +54,7 @@
 				<div class="feature-item">
 					<img src="img/Дом.svg" alt="Дом" class="svg-icon-2">
 					<h3>Отличный сервис</h3>
-					<p>Во время охоты нашим клиентам обеспечиваются комфортабельные условия проживания и оличный сервис!</p>
+					<p>Во время охоты нашим клиентам обеспечиваются комфортабельные условия проживания и отличный сервис!</p>
 				</div>
 				<div class="feature-item">
 					<img src="img/Охотник.svg" alt="Охотник" class="svg-icon-3">
@@ -79,11 +79,11 @@
 				<!-- slider -->
 				<div class="directions">
 					<div class="direction-blocks">
-						<div class="directions-block"><img src="img/Трофей.jpg" alt=""></div>
-						<div class="directions-block"><img src="img/Трофей.jpg" alt=""></div>
-						<div class="directions-block"><img src="img/Трофей.jpg" alt=""></div>
-						<div class="directions-block"><img src="img/Трофей.jpg" alt=""></div>
-						<div class="directions-block"><img src="img/Трофей.jpg" alt=""></div>
+						<div class="directions-block"><img src="img/galleri/1.jpg" alt=""></div>
+						<div class="directions-block"><img src="img/galleri/6.jpg" alt=""></div>
+						<div class="directions-block"><img src="img/galleri/7.jpg" alt=""></div>
+						<div class="directions-block"><img src="img/galleri/10.jpg" alt=""></div>
+						<div class="directions-block"><img src="img/galleri/15.jpg" alt=""></div>
 					</div>
 				</div>
 			</div>
@@ -179,6 +179,18 @@
 <script type="text/javascript" src="slick/slick.js"></script>
 <script> 
 
+	var checkImgWidth = function(){
+		var img = document.querySelectorAll('.galleri--img');
+		for(var i = 0; i < img.length; i++){
+			if(img[i].width > img[i].height){
+				img[i].className = 'galleri--img--height';
+			}
+		}
+	}
+
+	
+
+
 	 $(document).ready(function(){
     	$('.header').on("click","a", function (event) {
 		var id  = $(this).attr('href'),
@@ -240,6 +252,8 @@
     }
 
     createImgBlock(pictureUrls);
+
+    checkImgWidth();
 
     document.addEventListener('click', e=>{
     	if(e.target.id=='border'){
