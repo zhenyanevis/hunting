@@ -14,6 +14,80 @@ h2{
 	font-size: 48px;
 	font-weight: 700;
 }
+
+.galleri-slider{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	visibility: hidden;
+
+}
+.slider-window{
+	width: 960px;
+	height: 600px;
+	content: '';
+	position: relative;
+}
+.slider-window div{
+	width: 100%;
+	height: 100%;
+	-webkit-background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center center;
+}
+.galleri-slider .close-btn-white{
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 30px;
+	right: 40px;
+	opacity: 0.5;
+}
+.galleri-slider .close-btn-white:hover{
+	opacity: 1;
+}
+.galleri-slider .close-btn-white:active{
+	opacity:0.3;
+}
+
+.directions-block{
+	width: 100%;
+	height: 634px;
+	display: block;
+}
+.directions-block-1{
+	background-image: url('../img/galleri/1.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.directions-block-2{
+	background-image: url('../img/galleri/6.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.directions-block-3{
+	background-image: url('../img/galleri/7.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.directions-block-4{
+	background-image: url("../img/galleri/10.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.directions-block-5{
+	background-image: url("../img/galleri/15.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+}
 .header{
 	height: 900px;
 	width: 100%;
@@ -137,7 +211,7 @@ h2{
 }
 .about{
 	height: 960px;
-	background: #fff url("../img/Карта.png") 100% 50% no-repeat;
+	background: #fff url("../img/Карта2.png") 100% 50% no-repeat;
 	background-size: 80%;
 }
 .container{
@@ -146,7 +220,7 @@ h2{
 }
 .about-text{
 	padding-top: 80px;
-	width: 600px;	
+	width: 600px;
 }
 .features{
 	height: 960px;
@@ -211,7 +285,7 @@ h2{
 .slider{
 	cursor: -webkit-grab;
 	margin-top: 30px;
-	margin-bottom: 15px;	
+	margin-bottom: 15px;
 	background-color: #181818;
 	width: 960px;
 	height: 635px;
@@ -351,12 +425,12 @@ h2{
     animation-direction: normal;
 }
 @keyframes animatetop {
-    from {top:-300px; opacity:0} 
+    from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
 .feedback-block-item{
 	position: relative;
-	padding: 50px;	
+	padding: 50px;
 }
 .feedback-block-item img{
 	cursor: pointer;
@@ -478,7 +552,7 @@ h2{
 	display: flex;
 	align-content: flex-start;
 	flex-wrap: wrap;
-	justify-content: space-around;	
+	justify-content: space-around;
 	padding: 40px;
 	padding-top: 0;
 	width: 100%;
@@ -487,7 +561,7 @@ h2{
 .galleri-item{
 	cursor: pointer;
 	position: relative;
-	background-color: #8d8d8d;	
+	background-color: #8d8d8d;
 	max-width: 280px;
 	height: 169px;
 	margin-top: 35px;
@@ -496,7 +570,7 @@ h2{
 }
 .galleri-item img{
 
-	max-width: 100%;
+	max-width: 110%;
 	height: auto;
 }
 .galleri-item .border{

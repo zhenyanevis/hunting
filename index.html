@@ -14,7 +14,7 @@
 <body>
 
 	<div class="header" id="main">
-		<div class="header-menu">	
+		<div class="header-menu">
 			<div class="main-nav">
 				<ul>
 					<li><a href="#main"><img src="img/АнФрид.svg" alt="АнФрид" width="100px" height="100px"></a></li>
@@ -80,11 +80,11 @@
 				<!-- slider -->
 				<div class="directions">
 					<div class="direction-blocks">
-						<div class="directions-block"><img src="img/galleri/1.jpg" alt=""></div>
-						<div class="directions-block"><img src="img/galleri/6.jpg" alt=""></div>
-						<div class="directions-block"><img src="img/galleri/7.jpg" alt=""></div>
-						<div class="directions-block"><img src="img/galleri/10.jpg" alt=""></div>
-						<div class="directions-block"><img src="img/galleri/15.jpg" alt=""></div>
+						<div class="directions-block directions-block-1"></div>
+						<div class="directions-block directions-block-2"></div>
+						<div class="directions-block directions-block-3"></div>
+						<div class="directions-block directions-block-4"></div>
+						<div class="directions-block directions-block-5"></div>
 					</div>
 				</div>
 			</div>
@@ -118,7 +118,7 @@
 								<p>г. Жодино, ул. Брестская, д. 29, оф. 12</p>
 							</li>
 						</ul>
-					</div>	
+					</div>
 					<div class="footer-item">
 
 						<div class="order">
@@ -176,100 +176,14 @@
 	</div>
 </div>
 
+<div class="galleri-slider" id="galleri-slider-id">
+	<div class="slider-window"></div>
+	<img src="img/cancel white.svg" alt="X" class="close-btn-white">
+</div>
+
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.js"></script>
-<script> 
-
-	 $(document).ready(function(){
-    	$('.header').on("click","a", function (event) {
-		var id  = $(this).attr('href'),
-		top = $(id).offset().top;
-		var timeScroll = 1000;
-		$('body,html').animate({scrollTop: top}, timeScroll);
-	});
-    });
- 	var windowCloser = function(className){
- 		var controller = document.getElementsByClassName(className);
-    	controller[0].style.display = "none";
- 	}
-    
-    windowCloser('feedback');
-    windowCloser('galleri-popup');
-
-    var windowOpener = function(className){
-    	var controller = document.getElementsByClassName(className);
-    	controller[0].style.display = "flex";
-    }
-
-    var pictureUrls = [];
-    for(var i = 0; i < 21; i++){
-    	pictureUrls[i] = 'img/galleri/' + (i+1) + '.jpg';
-    }
-
-    var makeElement = function (tagName, className) {
-    	var element = document.createElement(tagName);
-    	element.classList.add(className);
-
-    	return element;
-    };
-
-    var createImgBlock = function(imgUrl){
-    	var galleriItem = makeElement('div', 'galleri-item');
-
-    	var border = makeElement('div', 'border');
-    	border.id = 'border';
-    	galleriItem.appendChild(border);
-
-    	var picture = makeElement('img', 'galleri--img');
-    	picture.src = imgUrl;
-    	picture.alt = 'Охота в Беларуси';
-    	galleriItem.appendChild(picture);
-
-    	return galleriItem;
-    }
-
-    var galleriList = document.querySelector('.galleri-items');
-
-    for (var i = 0; i < pictureUrls.length; i++) {
-    	var galleriItem = createImgBlock(pictureUrls[i]);
-    	galleriList.appendChild(galleriItem);  
-    }
-
-    createImgBlock(pictureUrls);
-
-
-    document.addEventListener('click', e=>{
-    	if(e.target.id=='border'){
-    		console.log(e.target.parentElement.children[1].src);
-    		let img = document.createElement('div');
-    		img.className = "galleri-img";
-    		img.style.backgroundImage ="url('"+ e.target.parentElement.children[1].src+"')";
-    		img.onclick = function(){
-    			img.remove();
-    		}
-
-    		document.getElementById('galleri-popup').appendChild(img);
-    	}
-    	if(e.target.id=='galleri-popup'){
-    		$(".galleri-popup").hide();
-    	}
-    	if(e.target.id=='feedback'){
-    		$(".feedback").hide();
-    	}
-    })
-    $('<div class=""></div>galleri-popup container').on('click',function(){
-    	$(".galleri-popup").hide();	
-    })
-</script>
-<script>
-	$('.direction-blocks').slick({
-		arrows: false,	
-		dots: true
-	});
-	$('.slider-blocks').slick({
-		arrows: false,	
-		dots: true
-	});
-</script>
+<script type="text/javascript" src="js/functions.js"></script>
+<script type="text/javascript" src="js/galleri-slick.js"></script>
 </body>
 </html>

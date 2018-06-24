@@ -27,8 +27,8 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -79,38 +79,41 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: -70px;
+    transform: rotate(90deg);
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: -70px;
     left: auto;
 }
 .slick-prev:before
 {
-    content: '←';
+    content: url('../img/Стрела.svg');
+    
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: url('../img/Стрела.svg');
 }
 
 .slick-next
 {
-    right: -25px;
+    right: -70px;
+    transform: rotate(-90deg);
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: -70px;
 }
 .slick-next:before
 {
-    content: '→';
+   content: url('../img/Стрела.svg');
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: url('../img/Стрела.svg');
 }
 
 /* Dots */
