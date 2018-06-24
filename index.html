@@ -140,7 +140,7 @@
 			<div class="feedback-block-item">
 				<h3>Оставить заявку</h3>
 				<img src="img/cancel.svg" alt="X" onclick="windowCloser('feedback');" class="close_btn">
-				<form class="feedback-form" action="" method="post">
+				<form class="feedback-form" action="mail.php" method="POST">
 					<div class="feedback-form-group">
 						<input type="text" name="name" placeholder="Имя" required>
 					</div>
@@ -151,7 +151,7 @@
 						<input type="email" name="email" placeholder="Email" required>
 					</div>
 					<div class="feedback-form-group">
-						<input type="tel" name="tel" placeholder="Телефон" required>
+						<input type="phone" name="phone" placeholder="Телефон" required>
 					</div>
 					<div class="feedback-form-group">
 						<textarea name="message" placeholder="Комментарий"></textarea>
