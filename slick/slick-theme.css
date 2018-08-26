@@ -89,12 +89,12 @@
 }
 .slick-prev:before
 {
-    content: url('../img/Стрела.svg');
+    content: url('../img/arrow.svg');
     
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: url('../img/Стрела.svg');
+    content: url('../img/arrow.svg');
 }
 
 .slick-next
@@ -109,11 +109,11 @@
 }
 .slick-next:before
 {
-   content: url('../img/Стрела.svg');
+   content: url('../img/arrow.svg');
 }
 [dir='rtl'] .slick-next:before
 {
-    content: url('../img/Стрела.svg');
+    content: url('../img/arrow.svg');
 }
 
 /* Dots */
